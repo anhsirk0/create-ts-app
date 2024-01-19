@@ -1,0 +1,11 @@
+* creat-ts-app
+Simple script to setup empty ts project.
+** Usage
+*** In new directory
+#+BEGIN_SRC shell
+$ creat-ts-app new-dir
+#+END_SRC
+*** In current directory
+#+BEGIN_SRC shell
+$ creat-ts-app
+#+END_SRC
