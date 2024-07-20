@@ -11,9 +11,16 @@ my $GREEN = "green";
 my $YELLOW = "yellow";
 
 sub create_ts_project {
-    print colored("Setting up TS in '" . getcwd() . "' ...\n", $YELLOW);
-    system('npm i typescript --save-dev');
+    my $add_cmd = "npm install";
+    $add_cmd = "yarn add" if `sh -c 'command -v yarn'`;
+    $add_cmd = "pnpm install" if `sh -c 'command -v pnpm'`;
+
+    my $pm = (split " ", $add_cmd)[0];
+
+    print colored("Setting up TS in '" . getcwd() . "' with '$pm'\n", $YELLOW);
+    system($add_cmd . ' typescript --save-dev');
     system('npx tsc --init');
+    system(q{echo 'console.log("Hello World!");' > index.ts});
     print colored("Done\n", $GREEN);
 }
 
