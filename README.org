@@ -11,7 +11,7 @@ $ creat-ts-app
 #+END_SRC
 ** What will it do?
 It will create a directory (if provided)
-It will run these 2 commands then.
+It will run these commands then.
 #+BEGIN_SRC shell
 $ npm i typescript --save-dev
 $ npx tsc --init
