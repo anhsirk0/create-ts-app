@@ -15,4 +15,5 @@ It will run these 2 commands then.
 #+BEGIN_SRC shell
 $ npm i typescript --save-dev
 $ npx tsc --init
+$ echo 'console.log("Hello World!");' > index.ts
 #+END_SRC
