@@ -1,5 +1,9 @@
 * creat-ts-app
 Simple script to setup empty ts project.
+** Installation
+#+BEGIN_SRC shell
+curl https://codeberg.org/anhsirk0/create-ts-app/raw/branch/main/create-ts-app.pl --output create-ts-app
+#+END_SRC
 ** Usage
 *** In new directory
 #+BEGIN_SRC shell
